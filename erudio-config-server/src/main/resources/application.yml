@@ -1,0 +1,9 @@
+server:
+  port: 8888
+spring:  application:    name: erudio-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/LuisPaulo1/erudio-config-server.git       
+          search-paths:          - 'greeting-service*'
